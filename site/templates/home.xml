@@ -9,7 +9,82 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<!-- Top Section of site -->
+			<header>
+				<nav>
+					<a href=""><cms:text constant=""/></a>
+					<a href=""><cms:text constant="about"/></a>
+					<a href=""><cms:text constant="teachers"/></a>
+					<a href=""><cms:text constant="sched"/></a>
+					<a href=""><cms:text constant="price"/></a>
+					<a href=""><cms:text constant="map"/></a>
+					<a href=""><cms:text constant="sponser"/></a>
+					<a href=""><cms:text constant="contact"/></a>
+				</nav>
+				<div class="inner_wrap">
+					<h2><cms:text constant="header1"/></h2>
+					<h3><cms:text constant="header2"/></h3>
+					<div class="details">
+						<span><cms:text constant="address"/></span>
+						<span><cms:text constant="date"/></span>
+						<span><cms:text constant="lectures"/></span>
+						<span><cms:text constant="tickets"/></span>
+					</div>
+					<div class="header_article">
+						<h2><cms:text constant="article_header"/></h2>
+						<p><cms:text constant="article_content"/></p>
+					</div>
+				</div>
+			</header>
+			<!-- Teachers Section -->
+			<div class="teachers_wrap">
+				<div class="inner_wrap">
+					<h2><cms:text constant="teacher_title"/></h2>
+					<div class="teacher">
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+					</div>
+					<div class="teacher">
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+						<span>
+							<h3><cms:text constant="teacher"/></h3>
+							<p><cms:text constant="level"/></p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- schedule Section -->
+			<div class="schedule_wrap">
+				<div class="inner_wrap">
+					<h2><cms:text constant="schedule_title"/></h2>
+						<div class="right_container">
+							<div class="break"></div>
+							<div class="subject"></div>
+						</div>
+						<div class="left_container">
+							<div class="break"></div>
+							<div class="subject"></div>
+						</div>
+
+				</div>
+			</div>
 		</body>
 	</html>
 </document>
