@@ -16,9 +16,11 @@
 
  header {
  	display: block;
- 	background-color: rgb(224, 220, 221);
- 	width: 100%;
- 	height: 800px;
+ 	background-image:url(../images/header/header-background-polygons.svg), url(../images/header/header-background.jpg);
+ 	background-repeat: no-repeat,no-repeat;
+ 	background-position:center center, center center;
+ 	background-size:1920px 955px, 1920px 955px;
+ 	height: 955px;
  	position: relative;
  }
 
@@ -59,7 +61,7 @@ header nav a:first-of-type {
 }
 
 header div.inner_wrap {
-	padding-top: 200px;
+	padding-top: 350px;
 	padding-bottom: 40px;
 	text-align: center;
 }
@@ -72,7 +74,6 @@ header div.inner_wrap h2 {
 	margin-right: auto;
 	font-size: 5em;
 	width: 700px;
-
 
 }
 
@@ -96,21 +97,29 @@ header div.inner_wrap div.details {
 header div.inner_wrap div.details span {
 	display: inline-block;
 	vertical-align: top;
+	background-image: url(../images/header/icons/location.svg);
+	background-repeat: no-repeat;
+	background-position: 255px center;
+	background-size: 25px 25px;
 	width: calc(25% - 2px);
 	font-size: 1.2em;
 	font-weight: 600;
-
 }
 
 header div.inner_wrap div.details span:nth-of-type(2) {
+	background-image: url(../images/header/icons/calendar.svg);
 	border-right: 1px solid black;
+	background-position: 230px center;
 }
 
 header div.inner_wrap div.details span:nth-of-type(3) {
+	background-image: url(../images/header/icons/lecturer.svg);
+	background-position: 200px center;
 	border-right: 1px solid black;
 }
 
 header div.inner_wrap div.details span:nth-of-type(4) {
+	background-image: url(../images/header/icons/ticket.svg);
 	border-right: 1px solid black;
 }
 
@@ -149,6 +158,7 @@ div.teachers_wrap div.inner_wrap {
 
 div.teachers_wrap div.inner_wrap h2 {
 	display: block;
+	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100px;
@@ -160,12 +170,36 @@ div.teachers_wrap div.inner_wrap div.teacher {
 	display: block;
 }
 
+div.teachers_wrap div.inner_wrap div.teacher:last-of-type {
+	padding-top: 20px;
+}
+
 div.teachers_wrap div.inner_wrap div.teacher span {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 320px;
+	background-image: url(../images/Lecturers/image-background.svg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 310px 310px;
 	width: 380px;
+	position: relative;
 }
 
+div.teachers_wrap div.inner_wrap div.teacher span:before {
+	content: "";
+	position: absolute;
+	top:12px;
+	left: 50%;
+	margin-left: -142.5px;
+	background-image: url(../images/Lecturers/lecturer-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 285px 285px;
+	border-radius: 50%;
+	width: 285px;
+	height:285px;
+}
 div.teachers_wrap div.inner_wrap div.teacher span h3 {
 	display: block;
 	margin-bottom: 0px;
@@ -207,6 +241,7 @@ div.schedule_wrap div.inner_wrap {
 div.schedule_wrap div.inner_wrap h2 {
 	display: block;
 	text-align: center;
+	margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100px;
