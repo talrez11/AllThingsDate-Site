@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<language name="English" short="en" default="yes">
-		<constant name="site_title">Site title</constant>
+	<language name="Hebrew" short="he" rtl="yes" default="yes">
+		<constant name="site_title">All Things Data</constant>
+		<constant name="about">אודות</constant>
+		<constant name="teachers">מרצים</constant>
+		<constant name="sched">תוכניה</constant>
+		<constant name="price">מחירים</constant>
+		<constant name="map">הגעה</constant>
+		<constant name="sponser">חסויות</constant>
+		<constant name="contact">צור קשר</constant>
+		<constant name="header1">ALL THINGS</constant>
+		<constant name="header2">DATA</constant>
+		<constant name="address">תל אביב, בית האומנים</constant>
+		<constant name="date">02/03/2015</constant>
+		<constant name="lectures">6 מרצים</constant>
+		<constant name="tickets">083 כרטיסים בלבד!</constant>
+		<constant name="article_header">נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי</constant>
+		<constant name="article_content"> וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה
+ קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס
+לורם איפסום דולור סיט אמט,
+		</constant>
+		<constant name="teacher_title">המרצים</constant>
+		<constant name="teacher">שם המרצה</constant>
+		<constant name="level">strategy</constant>
+		<constant name="schedule_title">תוכניה</constant>
 	</language>
 </document>
