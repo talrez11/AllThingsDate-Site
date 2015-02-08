@@ -75,11 +75,11 @@
 				<div class="inner_wrap">
 					<h2><cms:text constant="schedule_title"/></h2>
 						<div class="right_container">
-							<div class="break"></div>
+							<div class="intro"></div>
 							<div class="subject"></div>
 						</div>
 						<div class="left_container">
-							<div class="break"></div>
+							<div class="intro"></div>
 							<div class="subject"></div>
 						</div>
 
