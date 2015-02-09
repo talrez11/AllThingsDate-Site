@@ -76,12 +76,11 @@ Site.on_load = function() {
 	  // Exit Form
 
 	  $('div.form_wrap a').click(function(){
-	  		var y =event.pageY;
 	  		$('header nav').css('z-index','9999');
 	  		$('div.teacher').css('z-index','1');
 	  		$('div.form_wrap').css('visibility','hidden');
 	  		$('div.form_wrap').css('opacity','0');
-	  		$('html,body').offset().top = y;
+	  		
 	  });
 
 
