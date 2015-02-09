@@ -196,7 +196,7 @@ div.teachers_wrap div.form_wrap div.inner_wrap a {
 	width: 30px;
 	height: 30px;
 	color: white;
-	line-height: 30px;
+	line-height: 25px;
 }
 
 div.teachers_wrap div.form_wrap div.inner_wrap h2 {
@@ -291,7 +291,7 @@ div.teachers_wrap div.inner_wrap div.teacher:last-of-type {
 	padding-top: 20px;
 }
 
-div.teachers_wrap div.inner_wrap div.teacher span {
+div.teachers_wrap div.inner_wrap div.teacher > div {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 320px;
@@ -316,7 +316,7 @@ div.teachers_wrap div.inner_wrap div.teacher  div.social {
 	height: 285px;
 	opacity: 0;
 	z-index: 1;
-	transition:all 1s;
+	transition:all 0.5s;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher div.social:hover {
@@ -345,15 +345,15 @@ div.teachers_wrap div.inner_wrap div.teacher div.social a:nth-of-type(3) {
 }
 
 
-div.teachers_wrap div.inner_wrap div.teacher span:nth-of-type(2) {
+div.teachers_wrap div.inner_wrap div.teacher > div:nth-of-type(2) {
 	background-image: url(../images/Lecturers/lecturer-2.png);
 }
 
-div.teachers_wrap div.inner_wrap div.teacher span:nth-of-type(3) {
+div.teachers_wrap div.inner_wrap div.teacher > div:nth-of-type(3) {
 	background-image: url(../images/Lecturers/lecturer-3.png);
 }
 
-div.teachers_wrap div.inner_wrap div.teacher span:before {
+div.teachers_wrap div.inner_wrap div.teacher > div:before {
 	content: "";
 	position: absolute;
 	top:-12px;
@@ -370,7 +370,7 @@ div.teachers_wrap div.inner_wrap div.teacher span:before {
 	transition:all 0.5s;
 }
 
-div.teachers_wrap div.inner_wrap div.teacher span:hover:before {
+div.teachers_wrap div.inner_wrap div.teacher > div:hover:before {
 
 	-webkit-transform:rotate(280deg);
 	-moz-transform:rotate(280deg);
@@ -381,14 +381,14 @@ div.teachers_wrap div.inner_wrap div.teacher span:hover:before {
 
 
 
-div.teachers_wrap div.inner_wrap div.teacher span h3 {
+div.teachers_wrap div.inner_wrap div.teacher > div h3 {
 	display: block;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 1.8em;
 }
 
-div.teachers_wrap div.inner_wrap div.teacher span p {
+div.teachers_wrap div.inner_wrap div.teacher > div p {
 	display: block;
 	margin:0px;
 	font-size: 1.5em;
