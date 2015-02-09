@@ -18,12 +18,41 @@
 		<constant name="tickets">083 כרטיסים בלבד!</constant>
 		<constant name="article_header">נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי</constant>
 		<constant name="article_content"> וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה
- קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס
-לורם איפסום דולור סיט אמט,
+ 		קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס
+		לורם איפסום דולור סיט אמט,
 		</constant>
 		<constant name="teacher_title">המרצים</constant>
 		<constant name="teacher">שם המרצה</constant>
 		<constant name="level">strategy</constant>
 		<constant name="schedule_title">תוכניה</constant>
+		<constant name="schedule_hour">08:00 - 09:00</constant>
+		<constant name="schedule_intro">מינגלינג מינגלינג מינגלינג</constant>
+		<constant name="schedule_activity">םרול תילא גניסיפידא ררוטקסנוק ,טמא טיס רולוד םוספיא םרול
+ 		תס .תילא גניסיפידא ררוטקסנוק ,טמא טיס רולוד םוספיא
+ 		.האבינ ןונ יסינ םוקנמלא
+		</constant>
+		<constant name="schedule_status">Strategy</constant>
+
+		<constant name="pricing_title">מחירים</constant>
+		<constant name="price1">350</constant>
+		<constant name="price2">שח</constant>
+		<constant name="price_bottom">לכרטיס</constant>
+		<constant name="price_desc">הכרטיס כולל כניסה לכל ההרצאות, בופה ארוחת בוקר,ארוחת צהריים חמה ושתייה וכיבוד במהלך הכנס.
+		</constant>
+		<constant name="button_title">לחץ כאן לרכישת כרטיס</constant>
+
+		<constant name="direction_title">הגעה</constant>
+		<constant name="direction_desc1_title">כתובת</constant>
+		<constant name="direction_desc1">תל אביב, בית האומנים</constant>
+		<constant name="direction_desc2_title">קווי אוטובוסים</constant>
+		<constant name="direction_desc2">35, 40, 112, 53</constant>
+		<constant name="direction_desc3_title">קווי רכבת</constant>
+		<constant name="direction_desc3">35, 40, 112, 53</constant>
+		<constant name="footer_title">חסויות</constant>
+		<constant name="footer_end">רוצה לתת חסות?</constant>
+
+		<constant name="form_link">שריין מקומך</constant>
+		<constant name="form_title">אנא מלא את הפרטים הבאים</constant>
+		<constant name="send">המשך לרכישת הכרטיס</constant>
 	</language>
 </document>
