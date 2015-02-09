@@ -49,6 +49,44 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+	// Scroll Function
+	  $(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 500);
+	        return false;
+	      }
+	    }
+	  });
+	});
+
+  //Display Form
+	  $('header nav a:last(),div.teachers_wrap a, input[type="button"]').click(function(){
+	  		$('header nav').css('z-index','0');
+	  		$('div.teacher').css('z-index','0');
+	  		$('div.form_wrap').css('visibility','visible');
+	  		$('div.form_wrap').css('opacity','1');
+	  });
+
+	  // Exit Form
+
+	  $('div.form_wrap a').click(function(){
+	  		var y =event.pageY;
+	  		$('header nav').css('z-index','9999');
+	  		$('div.teacher').css('z-index','1');
+	  		$('div.form_wrap').css('visibility','hidden');
+	  		$('div.form_wrap').css('opacity','0');
+	  		$('html,body').offset().top = y;
+	  });
+
+
+
+
 };
 
 
