@@ -10,20 +10,19 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!-- Top Section of site -->
-			<header>
+			<header id="about">
 				<nav>
 					<a href=""><cms:text constant=""/></a>
-					<a href=""><cms:text constant="about"/></a>
-					<a href=""><cms:text constant="teachers"/></a>
-					<a href=""><cms:text constant="sched"/></a>
-					<a href=""><cms:text constant="price"/></a>
-					<a href=""><cms:text constant="map"/></a>
-					<a href=""><cms:text constant="sponser"/></a>
-					<a href=""><cms:text constant="contact"/></a>
+					<a href="#about"><cms:text constant="about"/></a>
+					<a href="#lectures"><cms:text constant="teachers"/></a>
+					<a href="#sched"><cms:text constant="sched"/></a>
+					<a href="#price"><cms:text constant="price"/></a>
+					<a href="#direction"><cms:text constant="map"/></a>
+					<a href="#footer"><cms:text constant="sponser"/></a>
+					<a href="#"><cms:text constant="contact"/></a>
 				</nav>
 				<div class="inner_wrap">
-					<h2><cms:text constant="header1"/></h2>
-					<h3><cms:text constant="header2"/></h3>
+					<span></span>
 					<div class="details">
 						<span><cms:text constant="address"/></span>
 						<span><cms:text constant="date"/></span>
@@ -37,54 +36,185 @@
 				</div>
 			</header>
 			<!-- Teachers Section -->
-			<div class="teachers_wrap">
+			<div id="lectures" class="teachers_wrap">
+				<a href="#"><cms:text constant="form_link"/></a>
+				<div class="form_wrap">
+					<div class="inner_wrap">
+						<h2><cms:text constant="form_title"/></h2>
+						<a href="#">x</a>
+						<cms:module
+					 				name="contact_form"
+					 				action="show"
+					 				text_id="contact_form"
+			 						/>
+
+					</div>
+				</div>
 				<div class="inner_wrap">
 					<h2><cms:text constant="teacher_title"/></h2>
 					<div class="teacher">
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
+
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
+
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
 					</div>
 					<div class="teacher">
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
 						<span>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
+							<div class="social">
+								<!-- Tweeter -->
+								<a href=""></a>
+								<!-- Facebook -->
+								<a href=""></a>
+								<!-- Google Plus -->
+								<a href=""></a>
+							</div>
 						</span>
 					</div>
 				</div>
 			</div>
 			<!-- schedule Section -->
-			<div class="schedule_wrap">
+			<div id="sched" class="schedule_wrap">
 				<div class="inner_wrap">
 					<h2><cms:text constant="schedule_title"/></h2>
 						<div class="right_container">
-							<div class="intro"></div>
-							<div class="subject"></div>
+							<div class="intro">
+								<h3><cms:text constant="schedule_hour"/></h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+							<div class="subject">
+								<h3><cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
 						</div>
 						<div class="left_container">
-							<div class="intro"></div>
-							<div class="subject"></div>
+							<div class="intro">
+								<h3><cms:text constant="schedule_hour"/></h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+							<div class="subject">
+								<h3><cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
 						</div>
+				</div>
+			</div>
+			<!-- Pricing Section -->
+			<div id="price" class="pricing_wrap">
+				<div class="inner_wrap">
+					<h2><cms:text constant="pricing_title"/></h2>
+					<h3><cms:text constant="price1"/><span><cms:text constant="price2"/></span></h3>
+					<span><cms:text constant="price_bottom"/></span>
+					<p><cms:text constant="price_desc"/></p>
+					<input type="button" value="לחץ כאן לרכישת כרטיס"/>
 
 				</div>
 			</div>
+			<!-- Direction Section -->
+			<div id="direction" class="direction_wrap">
+					<div class="info">
+						<h2><cms:text constant="direction_title"/></h2>
+						<div class="info_desc">
+							<span><cms:text constant="direction_desc1_title"/></span>
+							<span><cms:text constant="direction_desc1"/></span>
+						</div>
+						<div class="info_desc">
+							<span><cms:text constant="direction_desc2_title"/></span>
+							<span><cms:text constant="direction_desc2"/></span>
+						</div>
+						<div class="info_desc">
+							<span><cms:text constant="direction_desc3_title"/></span>
+							<span><cms:text constant="direction_desc3"/></span>
+						</div>
+					</div>
+					<div class="map"></div>
+			</div>
+			<!-- Footer Section -->
+			<footer id="footer">
+				<div class="inner_wrap">
+					<h2><cms:text constant="footer_title"/></h2>
+					<div class="sponser">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sponser">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<span><cms:text constant="footer_end"/></span>
+				</div>
+			</footer>
 		</body>
 	</html>
 </document>
