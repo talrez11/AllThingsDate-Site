@@ -67,10 +67,11 @@ Site.on_load = function() {
 
   //Display Form
 	  $('header nav a:last(),div.teachers_wrap a, input[type="button"]').click(function(){
-	  		$('header nav').css('z-index','0');
+	  		$('header nav').css('z-index','2');
 	  		$('div.teacher').css('z-index','0');
 	  		$('div.form_wrap').css('visibility','visible');
 	  		$('div.form_wrap').css('opacity','1');
+	  		$('div.form_wrap').css('z-index','3');
 	  });
 
 	  // Exit Form
