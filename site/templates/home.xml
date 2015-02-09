@@ -53,7 +53,7 @@
 				<div class="inner_wrap">
 					<h2><cms:text constant="teacher_title"/></h2>
 					<div class="teacher">
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -64,9 +64,9 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -77,9 +77,9 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -90,10 +90,10 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 					</div>
 					<div class="teacher">
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -104,8 +104,8 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
-						<span>
+						</div>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -116,8 +116,8 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
-						<span>
+						</div>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -128,7 +128,7 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 					</div>
 				</div>
 			</div>
