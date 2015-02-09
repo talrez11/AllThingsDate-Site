@@ -179,6 +179,11 @@ div.teachers_wrap div.form_wrap {
 	transition:all 0.6s;
 }
 
+.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
 div.teachers_wrap div.form_wrap div.inner_wrap {
 	width: 600px;
 	background-color: white;
@@ -316,7 +321,7 @@ div.teachers_wrap div.inner_wrap div.teacher  div.social {
 	height: 285px;
 	opacity: 0;
 	z-index: 1;
-	transition:all 0.5s;
+	transition:all 0.8s;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher div.social:hover {
@@ -367,7 +372,7 @@ div.teachers_wrap div.inner_wrap div.teacher > div:before {
 	width: 308px;
 	height:308px;
 	z-index: -1;
-	transition:all 0.5s;
+	transition:all 0.8s;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher > div:hover:before {
