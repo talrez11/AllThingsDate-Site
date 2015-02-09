@@ -34,8 +34,8 @@ header nav {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
-	background-color: rgba(244, 155, 40, 0.8);
-	z-index: 1;
+	background-color:rgba(246, 152, 31, 0.95);
+	z-index: 9999;
 }
 
 header nav a  {
@@ -52,42 +52,31 @@ header nav a  {
 }
 
 header nav a:first-of-type {
-	background-image: url(../images/header/logo.svg);
+	background-image: url(../images/header/logo-white.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 215px 30px;
-	width: 215px;
-	height: 30px;
+	background-size: 292px 50px;
+	width: 292px;
+	height: 50px;
 }
 
 header div.inner_wrap {
-	padding-top: 350px;
+	padding-top: 500px;
 	padding-bottom: 40px;
 	text-align: center;
 }
 
-header div.inner_wrap h2 {
+header div.inner_wrap > span {
 	display: block;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 5em;
-	width: 700px;
-
+	background-image: url(../images/header/logo-color.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:540px 92px;
+	width: 540px;
+	height: 92px;
 }
-
-header div.inner_wrap h3 {
-	display: block;
-	margin-top: -80px;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 12em;
-	width: 700px;
-
-}
-
 header div.inner_wrap div.details {
 	display: block;
 	padding-top: 40px;
@@ -120,6 +109,7 @@ header div.inner_wrap div.details span:nth-of-type(3) {
 
 header div.inner_wrap div.details span:nth-of-type(4) {
 	background-image: url(../images/header/icons/ticket.svg);
+	background-position: 240px center;
 	border-right: 1px solid black;
 }
 
@@ -148,7 +138,132 @@ div.teachers_wrap {
 	display: block;
 	text-align: center;
 	background-color: white;
+	position: relative;
 }
+
+div.teachers_wrap > a {
+	position: absolute;
+	top: 350px;
+	right: -110px;
+	width: 275px;
+	height: 50px;
+	background-color: #f6981f;
+	background-image: url(../images/Lecturers/icons/ticket.svg);
+	background-repeat: no-repeat;
+	background-position: 215px center;
+	background-size: 32px 32px;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+	line-height: 50px;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+
+}
+
+/*FORM*/
+div.teachers_wrap div.form_wrap {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding-top: 115px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.6s;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap {
+	width: 600px;
+	background-color: white;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap a {
+	position: absolute;
+	top: -40px;
+	right: -50px;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	font-size: 1.8em;
+	width: 30px;
+	height: 30px;
+	color: white;
+	line-height: 30px;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap h2 {
+	display: block;
+	width: 100%;
+	font-size: 1.7em;
+	border-bottom: none;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap form {
+	display: block;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap form label {
+	display: block;
+	margin-top: 15px;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap form label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+	height: 60px;
+	width: 55%;
+	font-size: 1.8em;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap form div.controls {
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.teachers_wrap div.form_wrap div.inner_wrap form div.controls button {
+	border: none;
+	height: 60px;
+	width: 56%;
+	padding-left: 25px;
+	font-size: 1.8em;
+	background-color: #f6981f;
+	background-image: url(../images/Lecturers/icons/ticket.svg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 32px 32px;
+	color: white;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color:black;
+}
+:-moz-placeholder {
+   color:black;
+}
+::-moz-placeholder {
+   color:black;
+}
+:-ms-input-placeholder {
+   color:black;
+}
+
+
 
 div.teachers_wrap div.inner_wrap {
 	display: block;
@@ -156,7 +271,7 @@ div.teachers_wrap div.inner_wrap {
 	padding-bottom: 40px;
 }
 
-div.teachers_wrap div.inner_wrap h2 {
+div.teachers_wrap div.inner_wrap > h2 {
 	display: block;
 	margin-top: 0px;
 	margin-left: auto;
@@ -168,6 +283,8 @@ div.teachers_wrap div.inner_wrap h2 {
 
 div.teachers_wrap div.inner_wrap div.teacher {
 	display: block;
+	position: relative;
+	z-index: 50;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher:last-of-type {
@@ -178,44 +295,112 @@ div.teachers_wrap div.inner_wrap div.teacher span {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 320px;
-	background-image: url(../images/Lecturers/image-background.svg);
+	background-image: url(../images/Lecturers/lecturer-1.png);
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 310px 310px;
+	background-size: 285px 285px;
 	width: 380px;
 	position: relative;
+
+}
+
+div.teachers_wrap div.inner_wrap div.teacher  div.social {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left:-142.5px;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	border-radius: 50%;
+	width: 285px;
+	height: 285px;
+	opacity: 0;
+	z-index: 1;
+	transition:all 1s;
+}
+
+div.teachers_wrap div.inner_wrap div.teacher div.social:hover {
+	opacity: 1;
+}
+
+div.teachers_wrap div.inner_wrap div.teacher div.social a {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 120px;
+	padding: 10px;
+	background-image: url(../images/Lecturers/icons/icon-twitter.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+div.teachers_wrap div.inner_wrap div.teacher div.social a:nth-of-type(2) {
+	background-image: url(../images/Lecturers/icons/icon-facebook.svg);
+}
+
+div.teachers_wrap div.inner_wrap div.teacher div.social a:nth-of-type(3) {
+	background-image: url(../images/Lecturers/icons/icon-googleplus.svg);
+}
+
+
+div.teachers_wrap div.inner_wrap div.teacher span:nth-of-type(2) {
+	background-image: url(../images/Lecturers/lecturer-2.png);
+}
+
+div.teachers_wrap div.inner_wrap div.teacher span:nth-of-type(3) {
+	background-image: url(../images/Lecturers/lecturer-3.png);
 }
 
 div.teachers_wrap div.inner_wrap div.teacher span:before {
 	content: "";
 	position: absolute;
-	top:12px;
+	top:-12px;
 	left: 50%;
-	margin-left: -142.5px;
-	background-image: url(../images/Lecturers/lecturer-1.jpg);
+	margin-left: -154px;
+	background-image: url(../images/Lecturers/image-background.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 285px 285px;
+	background-size: 308px 308px;
 	border-radius: 50%;
-	width: 285px;
-	height:285px;
+	width: 308px;
+	height:308px;
+	z-index: -1;
+	transition:all 0.5s;
 }
+
+div.teachers_wrap div.inner_wrap div.teacher span:hover:before {
+
+	-webkit-transform:rotate(280deg);
+	-moz-transform:rotate(280deg);
+	-0-transform:rotate(280deg);
+	transform:rotate(280deg);
+}
+
+
+
+
 div.teachers_wrap div.inner_wrap div.teacher span h3 {
 	display: block;
+	margin-top: 0px;
 	margin-bottom: 0px;
+	font-size: 1.8em;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher span p {
 	display: block;
 	margin:0px;
+	font-size: 1.5em;
+	color:#808080;
 }
 
 /*schedule Section */
 
 div.schedule_wrap {
 	display: block;
-	background-color: rgb(224, 220, 221);
-	height: 700px;
+	background-color: #f2f2f2;
+	height: auto;
 	position: relative;
 }
 
@@ -225,7 +410,7 @@ div.schedule_wrap:before {
 	bottom: 0px;
 	left:50%;
 	margin-left: -1.5px;
-	height: 75%;
+	height: 80%;
 	width:3px;
 	background-color: orange;
 }
@@ -251,27 +436,535 @@ div.schedule_wrap div.inner_wrap h2 {
 div.schedule_wrap div.inner_wrap div.right_container {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 10px;
+	margin-left: 80px;
 	width: 500px;
-	height: 400px;
-	border: 1px solid black;
+	height: auto;
 }
 
-div.schedule_wrap div.inner_wrap div.right_container div.break {
+div.schedule_wrap div.inner_wrap div.right_container div.intro {
 	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: right;
+	background-color: white;
+	border:1px solid rgba(128, 128, 128, 0.4);
 	width:90%;
-	height: 200px;
-	border:1px solid black;
+	position: relative;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.intro:before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid rgba(62, 41, 41, 0);
+	border-right: 30px solid white;
+	border-bottom: 25px solid transparent;
+	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.intro:after {
+	content: "";
+	position: absolute;
+	top: 63px;
+	left: -67px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	border: 2px solid orange;
+}
+div.schedule_wrap div.inner_wrap div.right_container div.intro h3 {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	background-color: #f2f2f2;
+	background-image: url(../images/program/icon-clock.svg);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 15px 15px;
+	font-size: 1.1em;
+	color:#808080;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.intro p:first-of-type {
+	display: block;
+	font-size: 1.3em;
+	color:black;
+	font-weight: 600;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.intro p:last-of-type {
+	display: block;
+	font-size: 1em;
+	color:#808080;
+
+}
+
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject {
+	display: block;
+	padding-top: 230px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	background-color: white;
+	background-image: url(../images/program/dude.jpg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size:95%;
+	border:1px solid rgba(128, 128, 128, 0.4);
+	width:90%;
+	position: relative;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject:before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid rgba(62, 41, 41, 0);
+	border-right: 30px solid white;
+	border-bottom: 25px solid transparent;
+	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject:after {
+	content: "";
+	position: absolute;
+	top: 63px;
+	left: -67px;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject h3 {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	background-color: #f2f2f2;
+	background-image: url(../images/program/icon-clock.svg);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 15px 15px;
+	font-size: 1.1em;
+	color:#808080;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject h3 > span {
+	display: inline-block;
+	width: 300px;
+	background-image: url(../images/program/icon-lecture-type.svg);
+	background-repeat: no-repeat;
+	background-position: 200px center;
+	background-size: 15px 15px;
+	text-align: right;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject p:first-of-type {
+	display: block;
+	font-size: 1.3em;
+	color:black;
+	font-weight: 600;
+}
+
+div.schedule_wrap div.inner_wrap div.right_container div.subject p:last-of-type {
+	display: block;
+	font-size: 1em;
+	color:#808080;
 
 }
 
 div.schedule_wrap div.inner_wrap div.left_container {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 100px;
 	margin-right: 10px;
 	width: 500px;
-	height: 400px;
-	border: 1px solid black;
+	height: auto;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.intro {
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	background-color: white;
+	border:1px solid rgba(128, 128, 128, 0.4);
+	width:90%;
+	position: relative;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.intro:before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	right: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid rgba(62, 41, 41, 0);
+	border-left: 30px solid white;
+	border-bottom: 25px solid transparent;
+	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.intro:after {
+	content: "";
+	position: absolute;
+	top: 63px;
+	right: -67px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	border: 2px solid orange;
+}
+div.schedule_wrap div.inner_wrap div.left_container div.intro h3 {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	background-color: #f2f2f2;
+	background-image: url(../images/program/icon-clock.svg);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 15px 15px;
+	font-size: 1.1em;
+	color:#808080;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.intro p:first-of-type {
+	display: block;
+	font-size: 1.3em;
+	color:black;
+	font-weight: 600;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.intro p:last-of-type {
+	display: block;
+	font-size: 1em;
+	color:#808080;
+
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject {
+	display: block;
+	padding-top: 230px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	background-color: white;
+	background-image: url(../images/program/dude.jpg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size:95%;
+	border:1px solid rgba(128, 128, 128, 0.4);
+	width:90%;
+	position: relative;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject:before {
+	content: '';
+	position: absolute;
+	top: 50px;
+	right: -30px;
+	width: 0;
+	height: 0;
+	border-top: 25px solid rgba(62, 41, 41, 0);
+	border-left: 30px solid white;
+	border-bottom: 25px solid transparent;
+	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject:after {
+	content: "";
+	position: absolute;
+	top: 63px;
+	right: -67px;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject h3 {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	background-color: #f2f2f2;
+	background-image: url(../images/program/icon-clock.svg);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 15px 15px;
+	font-size: 1.1em;
+	color:#808080;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject h3 > span {
+	display: inline-block;
+	width: 300px;
+	background-image: url(../images/program/icon-lecture-type.svg);
+	background-repeat: no-repeat;
+	background-position: 200px center;
+	background-size: 15px 15px;
+	text-align: right;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject p:first-of-type {
+	display: block;
+	font-size: 1.3em;
+	color:black;
+	font-weight: 600;
+}
+
+div.schedule_wrap div.inner_wrap div.left_container div.subject p:last-of-type {
+	display: block;
+	font-size: 1em;
+	color:#808080;
+
+}
+
+/*Pricing Section*/
+
+div.pricing_wrap {
+	display: block;
+	background-color: white;
+	height: auto;
+}
+
+div.pricing_wrap div.inner_wrap {
+	display: block;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+div.pricing_wrap div.inner_wrap h2 {
+	display: block;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	border-bottom: 2px solid orange;
+}
+
+div.pricing_wrap div.inner_wrap h3 {
+	display: block;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/pricing/ticket.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 105px 105px;
+	font-size: 8em;
+
+}
+
+div.pricing_wrap div.inner_wrap h3 > span {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-bottom: 25px;
+	font-size: 0.4em;
+}
+
+div.pricing_wrap div.inner_wrap span {
+	display: block;
+	font-size: 2em;
+	font-weight: 600;
+	margin-top: -30px;
+}
+
+div.pricing_wrap div.inner_wrap p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	font-size: 0.9em;
+	color:#808080;
+}
+
+div.pricing_wrap div.inner_wrap input[type="button"] {
+	display: block;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #f6981f;
+	color: #f6981f;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+/*Direction Section*/
+
+div.direction_wrap {
+	display: block;
+	background-color: white;
+	height: auto;
+}
+
+div.direction_wrap div.map {
+	display: inline-block;
+	vertical-align: top;
+	height: 550px;
+	background-image: url(../images/Directions/map.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:1141px 550px;
+	width:calc(100% - 780px);
+	background-color: black;
+}
+div.direction_wrap div.info {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	background-image:url(../images/Directions/background.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 780px 550px;
+	width: 780px;
+	height: 550px;
+
+}
+
+div.direction_wrap div.info h2 {
+	display: block;
+	margin-right: 500px;
+	width: 70px;
+	padding-top: 30px;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+div.direction_wrap div.info div.info_desc {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+	background-image: url(../images/Directions/brown_icons/icon-location-pin.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 30px 40px;
+	text-align: right;
+	margin-right: auto;
+	width: 200px;
+}
+
+div.direction_wrap div.info div.info_desc:nth-of-type(2) {
+	background-image: url(../images/Directions/brown_icons/icon-bus.svg);
+}
+
+div.direction_wrap div.info div.info_desc:nth-of-type(3) {
+	background-image: url(../images/Directions/brown_icons/icon-train.svg);
+}
+
+div.direction_wrap div.info div.info_desc span:first-of-type {
+	display: block;
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+/*Footer Section*/
+
+footer {
+	display: block;
+	background-color: #f2f2f2;
+}
+
+footer div.inner_wrap {
+	display: block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+footer div.inner_wrap h2 {
+	display: block;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	border-bottom: 2px solid orange;
+}
+
+footer div.inner_wrap div.sponser {
+	display: block;
+	text-align: center;
+}
+
+footer div.inner_wrap div.sponser span {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 10px;
+	background-color: white;
+	background-image: url(../images/footer/lordes.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 180px 60px;
+	border: 1px solid rgba(128, 128, 128, 0.4);
+	width: 220px;
+	height: 120px;
+
+}
+
+footer div.inner_wrap div.sponser span:nth-of-type(2) {
+	background-image: url(../images/footer/medium-rare.png);
+}
+
+footer div.inner_wrap div.sponser span:nth-of-type(3) {
+	background-image: url(../images/footer/mn.png);
+}
+
+footer div.inner_wrap div.sponser span:nth-of-type(4) {
+	background-image: url(../images/footer/pivot.png);
+}
+
+footer div.inner_wrap > span {
+	display: block;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 1.4em;
+
 }
