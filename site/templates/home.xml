@@ -12,14 +12,14 @@
 			<!-- Top Section of site -->
 			<header id="about">
 				<nav>
-					<a href=""><cms:text constant=""/></a>
+					<a href="#"><cms:text constant=""/></a>
 					<a href="#about"><cms:text constant="about"/></a>
 					<a href="#lectures"><cms:text constant="teachers"/></a>
 					<a href="#sched"><cms:text constant="sched"/></a>
 					<a href="#price"><cms:text constant="price"/></a>
 					<a href="#direction"><cms:text constant="map"/></a>
 					<a href="#footer"><cms:text constant="sponser"/></a>
-					<a href="#"><cms:text constant="contact"/></a>
+					<a href="javascript:void(0)"><cms:text constant="contact"/></a>
 				</nav>
 				<div class="inner_wrap">
 					<span></span>
@@ -37,7 +37,7 @@
 			</header>
 			<!-- Teachers Section -->
 			<div id="lectures" class="teachers_wrap">
-				<a href="#"><cms:text constant="form_link"/></a>
+				<a href="javascript:void(0)"><cms:text constant="form_link"/></a>
 				<div class="form_wrap">
 					<div class="inner_wrap">
 						<h2><cms:text constant="form_title"/></h2>
@@ -53,7 +53,7 @@
 				<div class="inner_wrap">
 					<h2><cms:text constant="teacher_title"/></h2>
 					<div class="teacher">
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -64,9 +64,9 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -77,9 +77,9 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -90,10 +90,10 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 					</div>
 					<div class="teacher">
-						<span>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -104,8 +104,8 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
-						<span>
+						</div>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -116,8 +116,8 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
-						<span>
+						</div>
+						<div>
 							<h3><cms:text constant="teacher"/></h3>
 							<p><cms:text constant="level"/></p>
 							<div class="social">
@@ -128,7 +128,7 @@
 								<!-- Google Plus -->
 								<a href=""></a>
 							</div>
-						</span>
+						</div>
 					</div>
 				</div>
 			</div>
