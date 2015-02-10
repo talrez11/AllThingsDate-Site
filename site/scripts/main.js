@@ -83,15 +83,6 @@ Site.on_load = function() {
 	  		$('div.teacher').css('z-index','1');
 	  		$('div.form_wrap').css('visibility','hidden');
 	  		$('div.form_wrap').css('opacity','0');
-<<<<<<< HEAD
-=======
-	  		
->>>>>>> 55373bd9be2727550cb2b266f95aaa03cbbcacd1
-	  });
-
-
-
-
 };
 
 
