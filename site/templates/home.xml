@@ -41,7 +41,7 @@
 				<div class="form_wrap">
 					<div class="inner_wrap">
 						<h2><cms:text constant="form_title"/></h2>
-						<a href="#">x</a>
+						<a href="javascript:void(0)">x</a>
 						<cms:module
 					 				name="contact_form"
 					 				action="show"
