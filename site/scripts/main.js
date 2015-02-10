@@ -57,13 +57,16 @@ Site.on_load = function() {
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
 	        $('html,body').animate({
-	          scrollTop: target.offset().top
+	          scrollTop: target.offset().top - 100
 	        }, 500);
 	        return false;
 	      }
 	    }
 	  });
 	});
+
+	  //Active Link
+
 
 
 
@@ -83,7 +86,8 @@ Site.on_load = function() {
 	  		$('div.teacher').css('z-index','1');
 	  		$('div.form_wrap').css('visibility','hidden');
 	  		$('div.form_wrap').css('opacity','0');
-};
+		});
+}
 
 
 // connect document `load` event with handler function
