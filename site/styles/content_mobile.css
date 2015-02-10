@@ -6,41 +6,42 @@
  * Authors:Tal Reznic
  */
 
- div.inner_wrap {
+  div.inner_wrap {
  	display: block;
  	margin-left: auto;
  	margin-right: auto;
- 	width: 1200px;
  	position: relative;
  }
 
- header {
+  header {
  	display: block;
- 	background-image:url(../images/header/header-background-polygons.svg), url(../images/header/header-background.jpg);
- 	background-repeat: no-repeat,no-repeat;
- 	background-position:center center, center center;
- 	background-size:1920px 955px, 1920px 955px;
- 	height: 955px;
+ 	background-image:url(../images/header/header-background.jpg);
+ 	background-repeat:no-repeat;
+ 	background-position:center center;
+ 	background-size:1920px 955px;
+ 	height: 665px;
  	position: relative;
  }
 
-
-header nav {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
+header div.mobile_title {
+	height: 70px;
 	background-color:rgba(246, 152, 31, 0.95);
-	z-index: 9999;
 }
 
-header nav a  {
-	display: inline-block;
-	vertical-align: middle;
+header div.mobile_title span {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/header/logo-white.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60%;
+	height: 50px;
+}
+
+.mobile_menu a {
+	display:block;
+	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
@@ -50,26 +51,29 @@ header nav a  {
 	border-bottom: 2px solid rgba(246, 152, 31, 0.95);
 	font-weight: bold;
 	transition:all 0.3s;
+}
 
+.mobile_title a.menu {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  background-image: url(../images/header/menu.svg);
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: auto 30px;
+  transition: 0.3s all;
 }
-header nav a:hover {
-	border-bottom: 2px solid white;
-}
-/*active {
-	border-bottom: 2px solid white;
-}*/
 
-header nav a:first-of-type {
-	background-image: url(../images/header/logo-white.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 292px 50px;
-	width: 292px;
-	height: 50px;
+.mobile_title.menu_visible a.menu {
+  background-position: 20px center;
 }
+
+
 
 header div.inner_wrap {
-	padding-top: 400px;
+	padding-top: 60px;
 	padding-bottom: 40px;
 	text-align: center;
 }
@@ -81,54 +85,51 @@ header div.inner_wrap > span {
 	background-image: url(../images/header/logo-color.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size:540px 92px;
-	width: 540px;
+	background-size:90%;
 	height: 92px;
 }
+
 header div.inner_wrap div.details {
 	display: block;
-	padding-top: 40px;
 	text-align: center;
 }
 
 header div.inner_wrap div.details span {
-	display: inline-block;
-	vertical-align: top;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-image: url(../images/header/icons/location.svg);
 	background-repeat: no-repeat;
-	background-position: 255px center;
+	background-position: 260px center;
 	background-size: 25px 25px;
-	width: calc(25% - 2px);
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: 600;
 }
 
 header div.inner_wrap div.details span:nth-of-type(2) {
 	background-image: url(../images/header/icons/calendar.svg);
-	border-right: 1px solid black;
-	background-position: 230px center;
+
 }
 
 header div.inner_wrap div.details span:nth-of-type(3) {
 	background-image: url(../images/header/icons/lecturer.svg);
-	background-position: 200px center;
-	border-right: 1px solid black;
+
 }
 
 header div.inner_wrap div.details span:nth-of-type(4) {
 	background-image: url(../images/header/icons/ticket.svg);
-	background-position: 240px center;
-	border-right: 1px solid black;
+
 }
 
 header div.inner_wrap div.header_article {
 	display: block;
-	padding-top: 40px;
 }
 
 header div.inner_wrap div.header_article h2 {
 	display: block;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -136,9 +137,11 @@ header div.inner_wrap div.header_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
-	font-size: 1.3em;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 0.9em;
 }
+
 
 /*Teacher Section*/
 
@@ -149,30 +152,24 @@ div.teachers_wrap {
 	position: relative;
 }
 
-div.teachers_wrap > a {
-	position: absolute;
-	top: 350px;
-	right: -110px;
-	width: 275px;
-	height: 50px;
+div.teachers_wrap div.inner_wrap > a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 250px;
 	background-color: #f6981f;
 	background-image: url(../images/Lecturers/icons/ticket.svg);
 	background-repeat: no-repeat;
-	background-position: 215px center;
-	background-size: 32px 32px;
+	background-position: 190px center;
+	background-size: 25px 25px;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: white;
 	font-weight: bold;
 	line-height: 50px;
-	-webkit-transform: rotate(270deg);
-	-moz-transform: rotate(270deg);
-	-o-transform: rotate(270deg);
-	transform: rotate(270deg);
-
 }
 
-/*FORM*/
 div.teachers_wrap div.form_wrap {
 	position: fixed;
 	top:0px;
@@ -193,29 +190,33 @@ div.teachers_wrap div.form_wrap {
 }
 
 div.teachers_wrap div.form_wrap div.inner_wrap {
-	width: 600px;
 	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90%;
 }
 
 div.teachers_wrap div.form_wrap div.inner_wrap a {
 	position: absolute;
-	top: -40px;
-	right: -50px;
+	top: -45px;
+	right: -5px;
 	padding: 5px;
 	text-decoration: none;
 	border: 1px solid white;
 	border-radius: 50%;
-	font-size: 1.8em;
-	width: 30px;
-	height: 30px;
+	font-size: 1em;
+	width: 20px;
+	height: 20px;
 	color: white;
-	line-height: 25px;
+	line-height: 20px;
 }
 
 div.teachers_wrap div.form_wrap div.inner_wrap h2 {
 	display: block;
-	width: 100%;
-	font-size: 1.7em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	font-size: 1.3em;
 	border-bottom: none;
 }
 
@@ -233,9 +234,9 @@ div.teachers_wrap div.form_wrap div.inner_wrap form label input {
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 5px;
-	height: 60px;
-	width: 55%;
-	font-size: 1.8em;
+	height: 50px;
+	width: 80%;
+	font-size: 1.1em;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -250,15 +251,15 @@ div.teachers_wrap div.form_wrap div.inner_wrap form div.controls {
 
 div.teachers_wrap div.form_wrap div.inner_wrap form div.controls button {
 	border: none;
-	height: 60px;
-	width: 56%;
+	height: 50px;
+	width: 80%;
 	padding-left: 25px;
-	font-size: 1.8em;
+	font-size: 1.1em;
 	background-color: #f6981f;
 	background-image: url(../images/Lecturers/icons/ticket.svg);
 	background-repeat: no-repeat;
 	background-position: 10px center;
-	background-size: 32px 32px;
+	background-size: 25px 25px;
 	color: white;
 	cursor: pointer;
 }
@@ -275,8 +276,6 @@ div.teachers_wrap div.form_wrap div.inner_wrap form div.controls button {
 :-ms-input-placeholder {
    color:black;
 }
-
-
 
 div.teachers_wrap div.inner_wrap {
 	display: block;
@@ -305,14 +304,13 @@ div.teachers_wrap div.inner_wrap div.teacher:last-of-type {
 }
 
 div.teachers_wrap div.inner_wrap div.teacher > div {
-	display: inline-block;
-	vertical-align: top;
+	display:block;
+	margin-top: 20px;
 	padding-top: 320px;
 	background-image: url(../images/Lecturers/lecturer-1.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 285px 285px;
-	width: 380px;
 	position: relative;
 
 }
@@ -391,20 +389,17 @@ div.teachers_wrap div.inner_wrap div.teacher > div:hover:before {
 	transform:rotate(280deg);
 }
 
-
-
-
 div.teachers_wrap div.inner_wrap div.teacher > div h3 {
 	display: block;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 div.teachers_wrap div.inner_wrap div.teacher > div p {
 	display: block;
 	margin:0px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color:#808080;
 }
 
@@ -423,10 +418,11 @@ div.schedule_wrap:before {
 	bottom: 0px;
 	left:50%;
 	margin-left: -1.5px;
-	height: 80%;
+	height: 93%;
 	width:3px;
 	background-color: orange;
 }
+
 
 div.schedule_wrap div.inner_wrap {
 	display: block;
@@ -447,15 +443,13 @@ div.schedule_wrap div.inner_wrap h2 {
 }
 
 div.schedule_wrap div.inner_wrap div.right_container {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 80px;
-	width: 500px;
+	display: block;
 	height: auto;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.intro {
 	display: block;
+	margin-top: 70px;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-left: auto;
@@ -463,34 +457,37 @@ div.schedule_wrap div.inner_wrap div.right_container div.intro {
 	text-align: right;
 	background-color: white;
 	border:1px solid rgba(128, 128, 128, 0.4);
-	width:90%;
+	width:85%;
 	position: relative;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.intro:before {
 	content: '';
 	position: absolute;
-	top: 50px;
-	left: -30px;
+	top: -25px;
+	left: 50%;
+	margin-left: -25px;
 	width: 0;
 	height: 0;
-	border-top: 25px solid rgba(62, 41, 41, 0);
-	border-right: 30px solid white;
-	border-bottom: 25px solid transparent;
-	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+	border-left: 25px solid rgba(62, 41, 41, 0);
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid white;
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.intro:after {
 	content: "";
 	position: absolute;
-	top: 63px;
-	left: -67px;
+	top: -50px;
+	left: 50%;
+	margin-left: -10px;
 	width: 20px;
 	height: 20px;
 	background-color: white;
 	border-radius: 50%;
 	border: 2px solid orange;
 }
+
 div.schedule_wrap div.inner_wrap div.right_container div.intro h3 {
 	display: block;
 	direction: ltr;
@@ -503,31 +500,30 @@ div.schedule_wrap div.inner_wrap div.right_container div.intro h3 {
 	background-repeat: no-repeat;
 	background-position: 15px center;
 	background-size: 15px 15px;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color:#808080;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.intro p:first-of-type {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color:black;
 	font-weight: 600;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.intro p:last-of-type {
 	display: block;
-	font-size: 1em;
+	font-size: 0.9em;
 	color:#808080;
 
 }
 
-
 div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	display: block;
-	padding-top: 230px;
+	padding-top: 155px;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-top: 30px;
+	margin-top: 75px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;
@@ -537,28 +533,30 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	background-position: center 10px;
 	background-size:95%;
 	border:1px solid rgba(128, 128, 128, 0.4);
-	width:90%;
+	width:85%;
 	position: relative;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject:before {
 	content: '';
 	position: absolute;
-	top: 50px;
-	left: -30px;
+	top: -25px;
+	left: 50%;
+	margin-left: -25px;
 	width: 0;
 	height: 0;
-	border-top: 25px solid rgba(62, 41, 41, 0);
-	border-right: 30px solid white;
-	border-bottom: 25px solid transparent;
-	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+	border-left: 25px solid rgba(62, 41, 41, 0);
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid white;
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject:after {
 	content: "";
 	position: absolute;
-	top: 63px;
-	left: -67px;
+	top: -50px;
+	left: 50%;
+	margin-left: -10px;
 	width: 20px;
 	height: 20px;
 	background-color: orange;
@@ -579,40 +577,37 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject h3 {
 	background-repeat: no-repeat;
 	background-position: 15px center;
 	background-size: 15px 15px;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color:#808080;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject h3 > span {
 	display: inline-block;
-	width: 300px;
+	width: 130px;
 	background-image: url(../images/program/icon-lecture-type.svg);
 	background-repeat: no-repeat;
-	background-position: 200px center;
+	background-position: 45px center;
 	background-size: 15px 15px;
 	text-align: right;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject p:first-of-type {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color:black;
 	font-weight: 600;
 }
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject p:last-of-type {
 	display: block;
-	font-size: 1em;
+	font-size: 0.9em;
 	color:#808080;
 
 }
 
 div.schedule_wrap div.inner_wrap div.left_container {
-	display: inline-block;
-	vertical-align: top;
+	display:block;
 	padding-top: 100px;
-	margin-right: 10px;
-	width: 500px;
 	height: auto;
 }
 
@@ -625,34 +620,37 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro {
 	text-align: right;
 	background-color: white;
 	border:1px solid rgba(128, 128, 128, 0.4);
-	width:90%;
+	width:85%;
 	position: relative;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.intro:before {
 	content: '';
 	position: absolute;
-	top: 50px;
-	right: -30px;
+	top: -25px;
+	left: 50%;
+	margin-left: -25px;
 	width: 0;
 	height: 0;
-	border-top: 25px solid rgba(62, 41, 41, 0);
-	border-left: 30px solid white;
-	border-bottom: 25px solid transparent;
-	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+	border-left: 25px solid rgba(62, 41, 41, 0);
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid white;
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.intro:after {
 	content: "";
 	position: absolute;
-	top: 63px;
-	right: -67px;
+	top: -50px;
+	left: 50%;
+	margin-left: -10px;
 	width: 20px;
 	height: 20px;
 	background-color: white;
 	border-radius: 50%;
 	border: 2px solid orange;
 }
+
 div.schedule_wrap div.inner_wrap div.left_container div.intro h3 {
 	display: block;
 	direction: ltr;
@@ -665,30 +663,30 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro h3 {
 	background-repeat: no-repeat;
 	background-position: 15px center;
 	background-size: 15px 15px;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color:#808080;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.intro p:first-of-type {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color:black;
 	font-weight: 600;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.intro p:last-of-type {
 	display: block;
-	font-size: 1em;
+	font-size: 0.9em;
 	color:#808080;
 
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	display: block;
-	padding-top: 230px;
+	padding-top: 155px;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-top: 30px;
+	margin-top: 75px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;
@@ -698,28 +696,30 @@ div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	background-position: center 10px;
 	background-size:95%;
 	border:1px solid rgba(128, 128, 128, 0.4);
-	width:90%;
+	width:85%;
 	position: relative;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject:before {
 	content: '';
 	position: absolute;
-	top: 50px;
-	right: -30px;
+	top: -25px;
+	left: 50%;
+	margin-left: -25px;
 	width: 0;
 	height: 0;
-	border-top: 25px solid rgba(62, 41, 41, 0);
-	border-left: 30px solid white;
-	border-bottom: 25px solid transparent;
-	  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
+	border-left: 25px solid rgba(62, 41, 41, 0);
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid white;
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.75));
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject:after {
 	content: "";
 	position: absolute;
-	top: 63px;
-	right: -67px;
+	top: -50px;
+	left: 50%;
+	margin-left: -10px;
 	width: 20px;
 	height: 20px;
 	background-color: orange;
@@ -740,30 +740,30 @@ div.schedule_wrap div.inner_wrap div.left_container div.subject h3 {
 	background-repeat: no-repeat;
 	background-position: 15px center;
 	background-size: 15px 15px;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	color:#808080;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject h3 > span {
 	display: inline-block;
-	width: 300px;
+	width: 130px;
 	background-image: url(../images/program/icon-lecture-type.svg);
 	background-repeat: no-repeat;
-	background-position: 200px center;
+	background-position: 45px center;
 	background-size: 15px 15px;
 	text-align: right;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject p:first-of-type {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	color:black;
 	font-weight: 600;
 }
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject p:last-of-type {
 	display: block;
-	font-size: 1em;
+	font-size: 0.9em;
 	color:#808080;
 
 }
@@ -798,21 +798,20 @@ div.pricing_wrap div.inner_wrap h3 {
 	padding-right: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 450px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	background-image: url(../images/pricing/ticket.svg);
 	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 105px 105px;
-	font-size: 8em;
+	background-position: 230px center;
+	background-size: 80px 80px;
+	font-size: 5em;
 
 }
 
 div.pricing_wrap div.inner_wrap h3 > span {
 	display: inline-block;
 	vertical-align: bottom;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	font-size: 0.4em;
 }
 
@@ -825,15 +824,18 @@ div.pricing_wrap div.inner_wrap span {
 
 div.pricing_wrap div.inner_wrap p {
 	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
+	width: 225px;
 	font-size: 0.9em;
 	color:#808080;
 }
 
 div.pricing_wrap div.inner_wrap input[type="button"] {
 	display: block;
+	width: 245px;
 	padding-top: 10px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -844,7 +846,7 @@ div.pricing_wrap div.inner_wrap input[type="button"] {
 	background-color: white;
 	border: 1px solid #f6981f;
 	color: #f6981f;
-	font-size: 2em;
+	font-size: 1.3em;
 	cursor: pointer;
 }
 
@@ -866,23 +868,25 @@ div.direction_wrap div.map {
 	background-size:1141px 550px;
 	width:calc(100% - 780px);
 	background-color: black;
+	display: none;
 }
+
 div.direction_wrap div.info {
-	display: inline-block;
-	vertical-align: top;
+	display: block;
 	text-align: left;
-	background-image:url(../images/Directions/background.svg);
+	background-color: rgb(246, 152, 31);
+	background-image: url(../images/Directions/background.svg);
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 780px 550px;
-	width: 780px;
-	height: 550px;
+	background-position: bottom center;
+	background-size: 100%;
+	height: 400px;
 
 }
 
 div.direction_wrap div.info h2 {
 	display: block;
-	margin-right: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 70px;
 	padding-top: 30px;
 	color: white;
@@ -891,17 +895,17 @@ div.direction_wrap div.info h2 {
 
 div.direction_wrap div.info div.info_desc {
 	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 40px;
+	padding-right: 140px;
 	padding-left: 40px;
 	background-image: url(../images/Directions/brown_icons/icon-location-pin.svg);
 	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 30px 40px;
+	background-position: 210px center;
+	background-size: 30px 30px;
 	text-align: right;
-	margin-right: auto;
-	width: 200px;
 }
 
 div.direction_wrap div.info div.info_desc:nth-of-type(2) {
@@ -915,7 +919,13 @@ div.direction_wrap div.info div.info_desc:nth-of-type(3) {
 div.direction_wrap div.info div.info_desc span:first-of-type {
 	display: block;
 	font-weight: 600;
-	font-size: 1.3em;
+	font-size: 1.2em;
+}
+
+div.direction_wrap div.info div.info_desc span:last-of-type {
+	display: block;
+	font-weight: 600;
+	font-size: 0.9em;
 }
 
 /*Footer Section*/
@@ -947,10 +957,10 @@ footer div.inner_wrap div.sponser {
 }
 
 footer div.inner_wrap div.sponser span {
-	display: inline-block;
-	vertical-align: top;
+	display:block;
 	margin-top: 20px;
-	margin-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: white;
 	background-image: url(../images/footer/lordes.png);
 	background-repeat: no-repeat;
@@ -982,136 +992,13 @@ footer div.inner_wrap > span {
 
 }
 
-/*
-	Tablet
-*/
 
-@media all and (max-width: 1024px) and (min-width: 768px){
 
-	div.inner_wrap {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: auto;
-		position: relative;
-	}
 
-	div.teachers_wrap div.inner_wrap div.teacher > div {
-		width: 330px;
-	}
 
-	div.teachers_wrap > a {
-		position: absolute;
-		top: 30px;
-		right: 0px;
-		width: 275px;
-		height: 50px;
-		background-color: #f6981f;
-		background-image: url(../images/Lecturers/icons/ticket.svg);
-		background-repeat: no-repeat;
-		background-position: 215px center;
-		background-size: 32px 32px;
-		text-decoration: none;
-		font-size: 1.5em;
-		color: white;
-		font-weight: bold;
-		line-height: 50px;
-		-webkit-transform: rotate(0deg);
-		 -moz-transform: rotate(0deg);
-		 -o-transform: rotate(0deg);
-		 transform: rotate(0deg);
-		 z-index: 1;
-	}
 
-	div.schedule_wrap:before {
-		height: 90%;
-	}
 
-	div.schedule_wrap div.inner_wrap div.right_container {
-		margin-left: 0px;
-	}
 
-	div.schedule_wrap div.inner_wrap div.right_container div.intro {
-		width: 74%;
-	}
 
-	div.schedule_wrap div.inner_wrap div.right_container div.subject {
-		width: 74%;
-	}
 
-	div.schedule_wrap div.inner_wrap div.right_container div.subject h3 > span {
-		width: 215px;
-		background-position: 115px center;
-	}
 
-	div.schedule_wrap div.inner_wrap div.right_container div.intro:before {
-		left: -27px;
-	}
-
-	div.schedule_wrap div.inner_wrap div.right_container div.subject:before {
-		left: -27px;
-	}
-
-	div.schedule_wrap div.inner_wrap div.left_container div.intro {
-		width: 74%;
-	}
-
-	div.schedule_wrap div.inner_wrap div.left_container div.subject {
-		width: 74%;
-	}
-
-	div.schedule_wrap div.inner_wrap div.left_container div.subject h3 > span {
-		width: 215px;
-		background-position: 115px center;
-	}
-
-	div.schedule_wrap div.inner_wrap div.left_container div.intro:before {
-		right: -28px;
-	}
-
-	div.schedule_wrap div.inner_wrap div.left_container div.subject:before {
-		right: -28px;
-	}
-
-	div.direction_wrap {
-		background-color: rgb(246, 152, 31);
-	}
-
-	div.direction_wrap div.map {
-		display: none;
-	}
-
-	div.direction_wrap div.info {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	div.direction_wrap div.info h2 {
-		display: block;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100px;
-		padding-top: 70px;
-		border-bottom: 1px solid white;
-	}
-
-	div.direction_wrap div.info div.info_desc {
-		display: block;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		padding-right: 40px;
-		padding-left: 40px;
-		background-image: url(../images/Directions/brown_icons/icon-location-pin.svg);
-		background-repeat: no-repeat;
-		background-position: 225px center;
-		background-size: 30px 40px;
-		width: 200px;
-
-}
-
-}
