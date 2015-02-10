@@ -54,5 +54,8 @@
 		<constant name="form_link">שריין מקומך</constant>
 		<constant name="form_title">אנא מלא את הפרטים הבאים</constant>
 		<constant name="send">המשך לרכישת הכרטיס</constant>
+
+		<constant name="copyright">Designed and developed by <![CDATA[<a href="http://way2cu.com">Way2cu</a>.]]></constant>
+		<constant name="rights">All rights reserved.</constant>
 	</language>
 </document>
