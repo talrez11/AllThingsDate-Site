@@ -423,7 +423,7 @@ div.schedule_wrap:before {
 	bottom: 0px;
 	left:50%;
 	margin-left: -1.5px;
-	height: 80%;
+	height: 94%;
 	width:3px;
 	background-color: orange;
 }
@@ -622,6 +622,7 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro {
 	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 20px;
 	text-align: right;
 	background-color: white;
 	border:1px solid rgba(128, 128, 128, 0.4);
@@ -920,18 +921,19 @@ div.direction_wrap div.info div.info_desc span:first-of-type {
 
 /*Footer Section*/
 
-footer {
+div.sponsor_wrap {
 	display: block;
 	background-color: #f2f2f2;
+	overflow: hidden;
 }
 
-footer div.inner_wrap {
+div.sponsor_wrap div.inner_wrap {
 	display: block;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
-footer div.inner_wrap h2 {
+div.sponsor_wrap div.inner_wrap h2 {
 	display: block;
 	text-align: center;
 	margin-top: 0px;
@@ -941,12 +943,12 @@ footer div.inner_wrap h2 {
 	border-bottom: 2px solid orange;
 }
 
-footer div.inner_wrap div.sponser {
+div.sponsor_wrap div.inner_wrap div.sponser {
 	display: block;
 	text-align: center;
 }
 
-footer div.inner_wrap div.sponser span {
+div.sponsor_wrap div.inner_wrap div.sponser span {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 20px;
@@ -962,25 +964,174 @@ footer div.inner_wrap div.sponser span {
 
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(2) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(2) {
 	background-image: url(../images/footer/medium-rare.png);
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(3) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(3) {
 	background-image: url(../images/footer/mn.png);
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(4) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(4) {
 	background-image: url(../images/footer/pivot.png);
 }
 
-footer div.inner_wrap > span {
+div.sponsor_wrap div.inner_wrap > a {
 	display: block;
 	padding-top: 40px;
 	text-align: center;
+	text-decoration: none;
 	font-size: 1.4em;
 
 }
+
+div.sponsor_wrap div.form_wrap {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding-top: 115px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.6s;
+	overflow: hidden;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap {
+	width: 600px;
+	background-color: white;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap a {
+	position: absolute;
+	top: -40px;
+	right: -50px;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	font-size: 1.8em;
+	width: 30px;
+	height: 30px;
+	color: white;
+	line-height: 25px;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap h2 {
+	display: block;
+	width: 100%;
+	font-size: 1.7em;
+	border-bottom: none;
+}
+
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form {
+	display: block;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form label {
+	display: block;
+	margin-top: 15px;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+	height: 60px;
+	width: 55%;
+	font-size: 1.8em;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form div.controls {
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form div.controls button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	background-color: #f6981f;
+	background-image: url(../images/Lecturers/icons/ticket.svg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 32px 32px;
+	text-align: center;
+	border: none;
+	height: 60px;
+	width: 56%;
+	font-size: 1.8em;
+	color: white;
+	cursor: pointer;
+}
+::-webkit-input-placeholder {
+    color:black;
+}
+:-moz-placeholder {
+   color:black;
+}
+::-moz-placeholder {
+   color:black;
+}
+:-ms-input-placeholder {
+   color:black;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+}
+footer div.footer_logo {
+	display: block;
+	padding-bottom: 10px;
+	background-image: url(../images/footer/lixfix_logo.png);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 20%;
+	height: 140px;
+}
+
+footer  div.copyright  {
+	display: inline-block;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 55px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	background-image: url(../images/footer/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 45px 45px;
+}
+
+footer  div.copyright span {
+	display: block;
+	direction: ltr;
+	text-align: left;
+}
+
+footer div.copyright span:nth-of-type(1) a {
+	padding-left: 5px;
+	color: rgb(2, 188, 229);
+}
+
 
 /*
 	Tablet
@@ -996,8 +1147,38 @@ footer div.inner_wrap > span {
 		position: relative;
 	}
 
+	header {
+		overflow: hidden;
+		height: 855px;
+	}
+
+	header div.inner_wrap div.header_article p {
+		padding-left: 15px;
+		padding-right: 15px;
+		width:800px;
+	}
+
+	header div.inner_wrap div.details span:nth-of-type(1) {
+		background-position: 215px center;
+	}
+
+	header div.inner_wrap div.details span:nth-of-type(2) {
+		background-position: 190px center;
+	}
+	header div.inner_wrap div.details span:nth-of-type(3) {
+	    background-position: 170px center;
+	}
+
+	header div.inner_wrap div.details span:nth-of-type(4) {
+	    background-position: 210px center;
+	}
+
 	div.teachers_wrap div.inner_wrap div.teacher > div {
-		width: 330px;
+		width: 320px;
+	}
+
+	div.teachers_wrap div.form_wrap div.inner_wrap form div.controls button {
+		font-size: 1.6em;
 	}
 
 	div.teachers_wrap > a {
@@ -1029,6 +1210,7 @@ footer div.inner_wrap > span {
 
 	div.schedule_wrap div.inner_wrap div.right_container {
 		margin-left: 0px;
+		width: 45%;
 	}
 
 	div.schedule_wrap div.inner_wrap div.right_container div.intro {
@@ -1040,8 +1222,8 @@ footer div.inner_wrap > span {
 	}
 
 	div.schedule_wrap div.inner_wrap div.right_container div.subject h3 > span {
-		width: 215px;
-		background-position: 115px center;
+		width: 150px;
+		background-position: 50px center;
 	}
 
 	div.schedule_wrap div.inner_wrap div.right_container div.intro:before {
@@ -1050,6 +1232,19 @@ footer div.inner_wrap > span {
 
 	div.schedule_wrap div.inner_wrap div.right_container div.subject:before {
 		left: -27px;
+	}
+
+	div.schedule_wrap div.inner_wrap div.right_container div.intro:after {
+		left: -60px;
+	}
+
+	div.schedule_wrap div.inner_wrap div.right_container div.subject:after {
+		left: -60px;
+	}
+
+
+	div.schedule_wrap div.inner_wrap div.left_container {
+		width: 45%;
 	}
 
 	div.schedule_wrap div.inner_wrap div.left_container div.intro {
@@ -1061,8 +1256,8 @@ footer div.inner_wrap > span {
 	}
 
 	div.schedule_wrap div.inner_wrap div.left_container div.subject h3 > span {
-		width: 215px;
-		background-position: 115px center;
+		width: 150px;
+		background-position: 50px center;
 	}
 
 	div.schedule_wrap div.inner_wrap div.left_container div.intro:before {
@@ -1072,6 +1267,15 @@ footer div.inner_wrap > span {
 	div.schedule_wrap div.inner_wrap div.left_container div.subject:before {
 		right: -28px;
 	}
+
+	div.schedule_wrap div.inner_wrap div.left_container div.intro:after {
+		right: -60px;
+	}
+
+	div.schedule_wrap div.inner_wrap div.left_container div.subject:after {
+		right: -60px;
+	}
+
 
 	div.direction_wrap {
 		background-color: rgb(246, 152, 31);
