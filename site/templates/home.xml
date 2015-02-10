@@ -165,7 +165,33 @@
 								<p><cms:text constant="schedule_activity"/></p>
 							</div>
 							<div class="subject">
-								<h3><cms:text constant="schedule_hour"/>
+								<h3>
+									<cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="left_container">
+							<div class="subject">
+								<h3>
+									<cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+							<div class="intro">
+								<h3><cms:text constant="schedule_hour"/></h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="right_container">
+							<div class="subject">
+								<h3>
+									<cms:text constant="schedule_hour"/>
 									<span><cms:text constant="schedule_status"/></span>
 								</h3>
 								<p><cms:text constant="schedule_intro"/></p>
@@ -178,10 +204,57 @@
 								<p><cms:text constant="schedule_intro"/></p>
 								<p><cms:text constant="schedule_activity"/></p>
 							</div>
+						</div>
+						<div class="right_container">
 							<div class="subject">
-								<h3><cms:text constant="schedule_hour"/>
+								<h3>
+									<cms:text constant="schedule_hour"/>
 									<span><cms:text constant="schedule_status"/></span>
 								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="left_container">
+							<div class="subject">
+								<h3>
+									<cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="right_container">
+							<div class="intro">
+								<h3><cms:text constant="schedule_hour"/></h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="left_container">
+							<div class="subject">
+								<h3>
+									<cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="right_container">
+							<div class="subject">
+								<h3>
+									<cms:text constant="schedule_hour"/>
+									<span><cms:text constant="schedule_status"/></span>
+								</h3>
+								<p><cms:text constant="schedule_intro"/></p>
+								<p><cms:text constant="schedule_activity"/></p>
+							</div>
+						</div>
+						<div class="left_container">
+							<div class="intro">
+								<h3><cms:text constant="schedule_hour"/></h3>
 								<p><cms:text constant="schedule_intro"/></p>
 								<p><cms:text constant="schedule_activity"/></p>
 							</div>
@@ -219,7 +292,7 @@
 					<div class="map"></div>
 			</div>
 			<!-- Footer Section -->
-			<footer id="footer">
+			<div class="sponsor_wrap">
 				<div class="inner_wrap">
 					<h2><cms:text constant="footer_title"/></h2>
 					<div class="sponser">
@@ -234,7 +307,28 @@
 						<span></span>
 						<span></span>
 					</div>
-					<span><cms:text constant="footer_end"/></span>
+					<a href="javascript:void(0)"><cms:text constant="footer_end"/></a>
+				</div>
+				<div class="form_wrap">
+					<div class="inner_wrap">
+						<h2><cms:text constant="form_title"/></h2>
+						<a href="javascript:void(0)">x</a>
+						<cms:module
+					 				name="contact_form"
+					 				action="show"
+					 				text_id="contact_form__sponser"
+			 						/>
+
+					</div>
+				</div>
+				<footer id="footer">
+				<!-- Footer Logo -->
+					<div class="footer_logo">
+
+					</div>
+				<div class="copyright">
+					<span><cms:text constant="copyright"/></span>
+					<span><cms:text constant="rights"/></span>
 				</div>
 			</footer>
 		</body>
