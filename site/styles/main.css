@@ -5,9 +5,9 @@
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
  * Authors:Tal Reznic
  */
-@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
 body {
-	font-family: 'Open Sans Hebrew', serif;
+	font-family: 'Arimo', sans-serif;
 	background-color: white;
 	color: black;
 }
