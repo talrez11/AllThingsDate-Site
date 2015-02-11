@@ -962,7 +962,7 @@ div.sponsor_wrap div.inner_wrap div.sponser span {
 	margin-right: auto;
 	margin-left: auto;
 	background-color: white;
-	background-image: url(../images/footer/lordes.png);
+	background-image: url(../images/footer/geek.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 180px 60px;
@@ -973,15 +973,28 @@ div.sponsor_wrap div.inner_wrap div.sponser span {
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(2) {
-	background-image: url(../images/footer/medium-rare.png);
+	background-image: url(../images/footer/groove.png);
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(3) {
-	background-image: url(../images/footer/mn.png);
+	background-image: url(../images/footer/monkey.png);
+	background-size: 50%;
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(4) {
-	background-image: url(../images/footer/pivot.png);
+	background-image: url(../images/footer/outbrain.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(1) {
+	background-image: url(../images/footer/mailchimp.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(2) {
+	background-image: url(../images/footer/startau.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(3) {
+	background-image: url(../images/footer/wistia.png);
 }
 
 div.sponsor_wrap div.inner_wrap > a {

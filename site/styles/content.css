@@ -866,26 +866,27 @@ div.direction_wrap div.map {
 	background-image: url(../images/Directions/map.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size:1141px 550px;
-	width:calc(100% - 780px);
+	background-size: 1205px 550px;
+	width: calc(100% - 700px);
 	background-color: black;
 }
 div.direction_wrap div.info {
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
-	background-image:url(../images/Directions/background.svg);
+	background-color: rgb(246, 152, 31);
+	background-image: url(../images/Directions/background.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 780px 550px;
-	width: 780px;
+	background-size: 700px 550px;
+	width: 700px;
 	height: 550px;
 
 }
 
 div.direction_wrap div.info h2 {
 	display: block;
-	margin-right: 500px;
+	margin-right: 425px;
 	width: 70px;
 	padding-top: 30px;
 	color: white;
@@ -956,10 +957,10 @@ div.sponsor_wrap div.inner_wrap div.sponser span {
 	margin-top: 20px;
 	margin-right: 10px;
 	background-color: white;
-	background-image: url(../images/footer/lordes.png);
+	background-image: url(../images/footer/geek.png);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 180px 60px;
+	background-size: 90%;
 	border: 1px solid rgba(128, 128, 128, 0.4);
 	width: 220px;
 	height: 120px;
@@ -967,15 +968,28 @@ div.sponsor_wrap div.inner_wrap div.sponser span {
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(2) {
-	background-image: url(../images/footer/medium-rare.png);
+	background-image: url(../images/footer/groove.png);
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(3) {
-	background-image: url(../images/footer/mn.png);
+	background-image: url(../images/footer/monkey.png);
+	background-size: 50%;
 }
 
 div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(4) {
-	background-image: url(../images/footer/pivot.png);
+	background-image: url(../images/footer/outbrain.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(1) {
+	background-image: url(../images/footer/mailchimp.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(2) {
+	background-image: url(../images/footer/startau.png);
+}
+
+div.sponsor_wrap div.inner_wrap div.sponser:nth-of-type(2) span:nth-of-type(3) {
+	background-image: url(../images/footer/wistia.png);
 }
 
 div.sponsor_wrap div.inner_wrap > a {
