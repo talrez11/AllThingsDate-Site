@@ -312,6 +312,10 @@ div.teachers_wrap div.inner_wrap div.teacher > div {
 	background-position: top center;
 	background-size: 285px 285px;
 	position: relative;
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-0-transform:rotate(0deg);
+	transform:rotate(0deg);
 
 }
 

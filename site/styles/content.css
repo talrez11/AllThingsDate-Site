@@ -1226,7 +1226,7 @@ footer div.copyright span:nth-of-type(1) a {
 	}
 
 	div.schedule_wrap:before {
-		height: 90%;
+		height: 95%;
 	}
 
 	div.schedule_wrap div.inner_wrap div.right_container {
@@ -1337,6 +1337,16 @@ footer div.copyright span:nth-of-type(1) a {
 		background-size: 30px 40px;
 		width: 200px;
 
-}
+	}
+
+	footer {
+
+		padding-bottom: 20px;
+	}
+
+	footer div.footer_logo {
+		padding-top: 90px;
+		padding-bottom: 0px;
+	}
 
 }
