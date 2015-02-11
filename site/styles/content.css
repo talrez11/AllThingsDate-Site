@@ -524,7 +524,7 @@ div.schedule_wrap div.inner_wrap div.right_container div.intro p:last-of-type {
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	display: block;
-	padding-top: 230px;
+	/*padding-top: 230px;*/
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 30px;
@@ -532,10 +532,10 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	margin-right: auto;
 	text-align: right;
 	background-color: white;
-	background-image: url(../images/program/dude.jpg);
+	/*background-image: url(../images/program/dude.jpg);
 	background-repeat: no-repeat;
 	background-position: center 10px;
-	background-size:95%;
+	background-size:95%;*/
 	border:1px solid rgba(128, 128, 128, 0.4);
 	width:90%;
 	position: relative;
@@ -686,7 +686,7 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro p:last-of-type {
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	display: block;
-	padding-top: 230px;
+	/*padding-top: 230px;*/
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 30px;
@@ -694,10 +694,10 @@ div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	margin-right: auto;
 	text-align: right;
 	background-color: white;
-	background-image: url(../images/program/dude.jpg);
+	/*background-image: url(../images/program/dude.jpg);
 	background-repeat: no-repeat;
 	background-position: center 10px;
-	background-size:95%;
+	background-size:95%;*/
 	border:1px solid rgba(128, 128, 128, 0.4);
 	width:90%;
 	position: relative;

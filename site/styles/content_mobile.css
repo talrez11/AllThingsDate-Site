@@ -480,7 +480,7 @@ div.schedule_wrap div.inner_wrap div.right_container div.intro:after {
 	position: absolute;
 	top: -50px;
 	left: 50%;
-	margin-left: -10px;
+	margin-left: -12px;
 	width: 20px;
 	height: 20px;
 	background-color: white;
@@ -520,7 +520,7 @@ div.schedule_wrap div.inner_wrap div.right_container div.intro p:last-of-type {
 
 div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	display: block;
-	padding-top: 155px;
+	/*padding-top: 155px;*/
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 75px;
@@ -528,10 +528,10 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject {
 	margin-right: auto;
 	text-align: right;
 	background-color: white;
-	background-image: url(../images/program/dude.jpg);
+	/*background-image: url(../images/program/dude.jpg);
 	background-repeat: no-repeat;
 	background-position: center 10px;
-	background-size:95%;
+	background-size:95%;*/
 	border:1px solid rgba(128, 128, 128, 0.4);
 	width:85%;
 	position: relative;
@@ -556,7 +556,7 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject:after {
 	position: absolute;
 	top: -50px;
 	left: 50%;
-	margin-left: -10px;
+	margin-left: -12px;
 	width: 20px;
 	height: 20px;
 	background-color: orange;
@@ -607,7 +607,6 @@ div.schedule_wrap div.inner_wrap div.right_container div.subject p:last-of-type 
 
 div.schedule_wrap div.inner_wrap div.left_container {
 	display:block;
-	padding-top: 100px;
 	height: auto;
 }
 
@@ -615,6 +614,7 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro {
 	display: block;
 	padding-right: 15px;
 	padding-left: 15px;
+	margin-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;
@@ -683,7 +683,7 @@ div.schedule_wrap div.inner_wrap div.left_container div.intro p:last-of-type {
 
 div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	display: block;
-	padding-top: 155px;
+	/*padding-top: 155px;*/
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-top: 75px;
@@ -691,10 +691,10 @@ div.schedule_wrap div.inner_wrap div.left_container div.subject {
 	margin-right: auto;
 	text-align: right;
 	background-color: white;
-	background-image: url(../images/program/dude.jpg);
+	/*background-image: url(../images/program/dude.jpg);
 	background-repeat: no-repeat;
 	background-position: center 10px;
-	background-size:95%;
+	background-size:95%;*/
 	border:1px solid rgba(128, 128, 128, 0.4);
 	width:85%;
 	position: relative;
@@ -802,7 +802,7 @@ div.pricing_wrap div.inner_wrap h3 {
 	margin-bottom: 0px;
 	background-image: url(../images/pricing/ticket.svg);
 	background-repeat: no-repeat;
-	background-position: 230px center;
+	background-position: 250px center;
 	background-size: 80px 80px;
 	font-size: 5em;
 
@@ -903,7 +903,7 @@ div.direction_wrap div.info div.info_desc {
 	padding-left: 40px;
 	background-image: url(../images/Directions/brown_icons/icon-location-pin.svg);
 	background-repeat: no-repeat;
-	background-position: 210px center;
+	background-position: 230px center;
 	background-size: 30px 30px;
 	text-align: right;
 }
@@ -930,18 +930,18 @@ div.direction_wrap div.info div.info_desc span:last-of-type {
 
 /*Footer Section*/
 
-footer {
+div.sponsor_wrap {
 	display: block;
 	background-color: #f2f2f2;
 }
 
-footer div.inner_wrap {
+div.sponsor_wrap div.inner_wrap {
 	display: block;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
-footer div.inner_wrap h2 {
+div.sponsor_wrap div.inner_wrap h2 {
 	display: block;
 	text-align: center;
 	margin-top: 0px;
@@ -951,12 +951,12 @@ footer div.inner_wrap h2 {
 	border-bottom: 2px solid orange;
 }
 
-footer div.inner_wrap div.sponser {
+div.sponsor_wrap div.inner_wrap div.sponser {
 	display: block;
 	text-align: center;
 }
 
-footer div.inner_wrap div.sponser span {
+div.sponsor_wrap div.inner_wrap div.sponser span {
 	display:block;
 	margin-top: 20px;
 	margin-right: auto;
@@ -972,25 +972,176 @@ footer div.inner_wrap div.sponser span {
 
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(2) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(2) {
 	background-image: url(../images/footer/medium-rare.png);
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(3) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(3) {
 	background-image: url(../images/footer/mn.png);
 }
 
-footer div.inner_wrap div.sponser span:nth-of-type(4) {
+div.sponsor_wrap div.inner_wrap div.sponser span:nth-of-type(4) {
 	background-image: url(../images/footer/pivot.png);
 }
 
-footer div.inner_wrap > span {
+div.sponsor_wrap div.inner_wrap > a {
 	display: block;
 	padding-top: 40px;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.2em;
 
 }
+
+div.sponsor_wrap div.form_wrap {
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding-top: 115px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.6s;
+	overflow: hidden;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap {
+	background-color: white;
+	width: 94%;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap a {
+	position: absolute;
+	top: -45px;
+	right: -5px;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	font-size: 1em;
+	width: 20px;
+	height: 20px;
+	color: white;
+	line-height: 20px;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	font-size: 1.3em;
+	border-bottom: none;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form {
+	display: block;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form label {
+	display: block;
+	margin-top: 15px;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 5px;
+	height: 50px;
+	width: 80%;
+	font-size: 1.1em;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form div.controls {
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+div.sponsor_wrap div.form_wrap div.inner_wrap form div.controls button {
+	border: none;
+	height: 50px;
+	width: 80%;
+	padding-left: 25px;
+	font-size: 1.1em;
+	background-color: #f6981f;
+	background-image: url(../images/Lecturers/icons/ticket.svg);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 25px 25px;
+	color: white;
+	cursor: pointer;
+}
+::-webkit-input-placeholder {
+    color:black;
+}
+:-moz-placeholder {
+   color:black;
+}
+::-moz-placeholder {
+   color:black;
+}
+:-ms-input-placeholder {
+   color:black;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+}
+
+footer div.footer_logo {
+	display: block;
+	padding-bottom: 10px;
+	background-image: url(../images/footer/lixfix_logo.png);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 20%;
+	height: 40px;
+}
+
+footer  div.copyright  {
+	display: inline-block;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 45px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	background-image: url(../images/footer/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 35px 35px;
+}
+
+
+footer  div.copyright span {
+	display: block;
+	direction: ltr;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+footer div.copyright span:nth-of-type(1) a {
+	padding-left: 5px;
+	color: rgb(2, 188, 229);
+}
+
+
+
 
 
 
