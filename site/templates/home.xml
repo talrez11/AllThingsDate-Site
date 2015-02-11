@@ -305,7 +305,7 @@
 						<span></span>
 						<span></span>
 						<span></span>
-						<span></span>
+						<!-- <span></span> -->
 					</div>
 					<a href="javascript:void(0)"><cms:text constant="footer_end"/></a>
 				</div>
