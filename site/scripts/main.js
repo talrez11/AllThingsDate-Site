@@ -49,27 +49,19 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	// Scroll Function
-	//   $(function() {
-	//   $('a[href*=#]').click(function() {
-	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	//       var target = $(this.hash);
-	//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	//       if (target.length) {
-	//         $('html,body').animate({
-	//           scrollTop: target.offset().top - 100
-	//         }, 500);
-	//         return false;
-	//       }
-	//     }
-	//   });
-	// });
-		$('a[href*=#]').click(function(event) {
-			var target=$(this.hash);
-			$('html,body').animate({
-			   scrollTop: target.offset().top - 100
-	       		}, 500);
-		});
+	//Scroll Function
+	$('a[href*=#]').bind('click', function(e) {
+	e.preventDefault(); //prevent the "normal" behaviour which would be a "hard" jump
+
+	var target = $(this).attr("href"); //Get the target
+
+	// perform animated scrolling by getting top-position of target-element and set it as scroll target
+	$('html, body').stop().animate({ scrollTop: $(target).offset().top - 100 }, 800, function() {
+	     location.hash = target;  //attach the hash (#jumptarget) to the pageurl
+	});
+
+	return false;
+   });
 	  //Active Link
 
 
@@ -84,13 +76,13 @@ Site.on_load = function() {
 	  		$('div.teachers_wrap div.form_wrap').css('z-index','3');
 	  });
  //Display Form Sponser
-	 	 $('.sponsor_wrap a').click(function(){
-		  		$('header nav').css('z-index','2');
-		  		$('div.teacher').css('z-index','0');
-		  		$('.sponsor_wrap div.form_wrap').css('visibility','visible');
-		  		$('.sponsor_wrap div.form_wrap').css('opacity','1');
-		  		$('.sponsor_wrap div.form_wrap').css('z-index','3');
-		  });
+ 	 $('div.sponsor_wrap a').click(function(){
+	  		$('header nav').css('z-index','2');
+	  		$('div.teacher').css('z-index','0');
+	  		$('div.sponsor_wrap div.form_wrap').css('visibility','visible');
+	  		$('div.sponsor_wrap div.form_wrap').css('opacity','1');
+	  		$('div.sponsor_wrap div.form_wrap').css('z-index','3');
+	  });
 
 	  // Exit Form
 
